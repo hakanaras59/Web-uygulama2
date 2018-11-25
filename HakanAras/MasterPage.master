@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hakan Aras</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css"/>
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper-bg">
+	<div id="wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="Anasayfa.aspx"><span>E-Spor</span>Dünyası</a></h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li class="active"><a href="Anasayfa.aspx" accesskey="1" title="">Anasayfa</a></li>
+					<li class="active"><a href="Takimlar.aspx" accesskey="2" title="">Takımlar ve Ligler</a></li>
+					<li class="active"><a href="Esportr.aspx" accesskey="3" title="">E-Spor</a> </li>
+					<li class="active"><a href="Uye.aspx" accesskey="4" title="">Üye Girişi</a></li>
+			  </ul>
+			</div>
+		</div>
+        </div>
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    <div id="footer">
+	<p> Design by Hakan Aras</p>
+</div>
+    </form>
+</body>
+</html>
